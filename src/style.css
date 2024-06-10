@@ -1,0 +1,43 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Seymour+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Seymour+One&display=swap');
+
+* {
+  color: white;
+  /* margin: 0; */
+  box-sizing: border-box;
+}
+
+.gradient2 {
+  background: #232526;
+  background: -webkit-linear-gradient(to right, #414345, #875234);  
+  background: linear-gradient(to right, #414345, #875234);
+}
+
+.seymour-one-regular {
+  font-family: "Seymour One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+}
+
+.caveat-font {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+}
+
+.roboto-mono {
+  font-family: "Roboto Mono", monospace !important;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1 !important;
+}
+
+.glassy {
+  background-color: rgba(0, 0, 0, 0.42);
+  backdrop-filter: blur(5px);
+}

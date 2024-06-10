@@ -1,0 +1,37 @@
+  // let flipCtx;
+  // flipCtx && flipCtx.revert()
+  // function anim() {
+
+  //   // flipCtx = gsap.context(() => {
+  //     const state = Flip.getState(vueImage)
+      
+  //     if (vueImage.parentNode === vueImageOld) {
+  //       vueImageNew.append(vueImage)
+  //     } else {
+  //       vueImageOld.append(vueImage)
+  //       // vueImageOld.appendChild(vueImage)
+  //     }
+
+  //     const flip = Flip.from(state, {
+  //       scale: true,
+  //       // absolute: true
+  //       duration: 2,
+  //       ease: 'power3.inOut',
+  //     })
+
+  //     gsap.timeline({
+  //       scrollTrigger: {
+  //         trigger: '.section4',
+  //         start: 'top-=350 center',
+  //         end: 'center center',
+  //         scrub: true,
+  //         markers: true,
+  //         // onEnter: () => {
+  //         //   vueImageNew.appendChild(vueImage)
+  //         // }
+  //       }
+  //     }).add(flip)
+  //   // })
+
+  // }
+  // anim()
