@@ -6,7 +6,7 @@ gsap.registerPlugin(ScrollTrigger, Flip)
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  const vueImage = document.querySelector('.vue')
+  const vueImage = document.querySelector('.skills .vue')
   const vueImageOld = document.querySelector('.vueWrapper')
   const vueImageNew = document.querySelector('.vueImageNew')
 
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   })
 
-  const laravelImage = document.querySelector('.laravel')
+  const laravelImage = document.querySelector('.skills .laravel')
   const laravelImageOld = document.querySelector('.laravelWrapper')
   const laravelImageNew = document.querySelector('.laravelImageNew')
 
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   })
 
-  const sqlImage = document.querySelector('.sql')
+  const sqlImage = document.querySelector('.skills .sql')
   const sqlImageOld = document.querySelector('.sqlWrapper')
   const sqlImageNew = document.querySelector('.sqlImageNew')
 
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   })
 
-  const vuetifyImage = document.querySelector('.vuetify')
+  const vuetifyImage = document.querySelector('.skills .vuetify')
   const vuetifyImageOld = document.querySelector('.vuetifyWrapper')
   const vuetifyImageNew = document.querySelector('.vuetifyImageNew')
 

@@ -38,16 +38,7 @@
 </template>
 
 <script setup>
-import { gsap } from 'gsap'
-import { onMounted, ref } from 'vue';
-import ScrollTrigger from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger) 
-
-onMounted(() => {
-
-
-})
 </script>
 
 
