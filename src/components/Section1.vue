@@ -44,15 +44,21 @@
     </v-row>
 
     <div 
-      class="skills glassy rounded mb-5 pa-3 d-flex ga-10 position-fixed left-0 right-0 bottom-0 mx-auto"
-      style="width: 500px; height: 100px;"
+      class="skills glassy rounded mb-5 pa-3 d-flex justify-center ga-10 position-fixed left-0 right-0 bottom-0 mx-auto"
+      style="width: 450px; height: 100px;"
     >
       <div class="vueWrapper" style="width: 70px; ">
         <v-img class="vue" src="skills/vue.png" width="70" height="70"></v-img>
       </div>
-      <v-img class="laravel" src="skills/Laravel.png" width="70"></v-img>
-      <v-img class="sql" src="skills/sql.png" width="70"></v-img>
-      <v-img class="vuetify" src="skills/vuetify.svg" width="70"></v-img>
+      <div class="laravelWrapper" style="width: 70px; ">
+        <v-img class="laravel" src="skills/Laravel.png" width="70" height="70"></v-img>
+      </div>
+      <div class="sqlWrapper" style="width: 70px; ">
+        <v-img class="sql" src="skills/sql.png" width="70" height="70"></v-img>
+      </div>
+      <div class="vuetifyWrapper" style="width: 70px; ">
+        <v-img class="vuetify" src="skills/vuetify.svg" width="70" height="70"></v-img>
+      </div>
     </div>
 
   </section>
