@@ -83,12 +83,7 @@ const links = ref([
 onMounted(() => {
   const card = document.querySelector('#section_6 .card')
 
-  gsap.from(card, {
-    y: -150,
-    rotateX: -50,
-    rotateY: 5,
-    opacity: 0,
-    duration: 2,
+  const tl = gsap.timeline({
     scrollTrigger: {
       trigger: '#section_6',
       start: 'top+=50 center',
@@ -97,6 +92,16 @@ onMounted(() => {
       scrub: true,
     }
   })
+
+  tl.from(card, {
+    y: -150,
+    rotateX: -50,
+    rotateY: 5,
+    opacity: 0,
+  }).from(['#section_6 .vue', '#section_6 .laravel', '#section_6 .sql', '#section_6 .vuetify'], {
+    y: -150,
+    opacity: 0,
+  }, '<')
 
 })
 </script>
