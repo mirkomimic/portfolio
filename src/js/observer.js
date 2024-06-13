@@ -15,13 +15,15 @@ document.addEventListener('DOMContentLoaded', () => {
         target: e,
         type: "wheel",
         onUp: () => {
+          if (index == 0) return
+
           gsap.to(window, {
             duration: .5,
             scrollTo: `#section_${index}`
           });
         },
         onDown: () => {
-          if ((sections.length - 1) == index) return false
+          if ((sections.length - 1) == index) return
 
           gsap.to(window, {
             duration: .5,

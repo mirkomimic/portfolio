@@ -33,7 +33,7 @@
         border: 1px solid white; 
         border-radius: 15px; 
         width: 800px; 
-        height: 500px;
+        height: 550px;
       "
     >
       <h4 class="text-h4 mb-3">
@@ -43,8 +43,9 @@
 
       <ul class="ms-3">
         <li v-for="(link, index) in links" :key="index" class="text-h5">
-          <a :href="link.link" class="text-decoration-none link" target="_blank">{{ link.name }}</a><br>
-          {{ link.desc }}
+          <a :href="link.link" class="text-decoration-none link roboto-mono" target="_blank">{{ link.name }}</a>
+          <br>
+          <p class="roboto-mono my-3">{{ link.desc }}</p>
         </li>
       </ul>
 
@@ -77,6 +78,11 @@ const links = ref([
     name: 'Payments App',
     desc: 'Laravel 10, Vue 3, InertiaJS, Vuetify 3, Laravel Cashier',
     link: 'https://github.com/mirkomimic/payments-app-fullstack'
+  },
+  {
+    name: 'Live Stock App',
+    desc: 'Laravel 11, Inertia.js Vue 3, Typescript, Vuetify 3, AlphaVantageAPI',
+    link: 'https://github.com/mirkomimic/live-stocks-app'
   },
 ])
 

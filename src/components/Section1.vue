@@ -2,11 +2,10 @@
   <section id="section_1" class="h-screen">
     <v-row class="h-100" >
       <v-col 
-        class="d-flex align-center justify-center pa-0"
+        class="d-flex align-center justify-center pa-0 mx-auto"
         cols="4"
       >
         <div class="d-flex">
-          <!-- <v-img src="images/programming4.png" width="400" class="image"></v-img> -->
           <v-img src="images/programming5.webp" width="400" class="image ms-5"></v-img>
         </div>
       </v-col>
@@ -14,10 +13,10 @@
         class="d-flex justify-center align-center pa-0"
       >
         <div 
-          class="card d-flex flex-column justify-center align-center ga-4 pa-4 mr-10"
+          class="card d-flex flex-column justify-center align-center ga-4 pa-4 mr-lg-10 mb-15 mb-lg-0"
           style="border: 1px solid white; border-radius: 15px; width: 800px;"
         >
-          <h1 class="roboto-mono text-h3">Welcome to My Portfolio</h1>
+          <h1 class="roboto-mono text-h4">Welcome to My Portfolio</h1>
 
           <h3 class="caveat-font">Hi, I'm 
             <span class="caveat-font text-light-blue-darken-1">M</span>
@@ -32,12 +31,12 @@
             <span class="caveat-font text-light-blue-darken-1">ċ</span>        
           </h3>
 
-          <p class="roboto-mono text-h5">I'm an aspiring Full Stack Web Developer with a keen</p>
-          <p class="roboto-mono text-h5">interest in building dynamic and responsive web</p>
-          <p class="roboto-mono text-h5">applications. With growing expertise in Laravel,</p>
-          <p class="roboto-mono text-h5"> Vue.js, MySQL, and Vuetify, I'm dedicated to learning</p>
-          <p class="roboto-mono text-h5"> and applying the best practices in both front-end and</p>
-          <p class="roboto-mono text-h5">back-end development.</p>
+          <p class="roboto-mono text-h6 line-height-1">I'm an aspiring Full Stack Web Developer with a keen</p>
+          <p class="roboto-mono text-h6 line-height-1">interest in building dynamic and responsive web</p>
+          <p class="roboto-mono text-h6 line-height-1">applications. With growing expertise in Laravel,</p>
+          <p class="roboto-mono text-h6 line-height-1"> Vue.js, MySQL, and Vuetify, I'm dedicated to learning</p>
+          <p class="roboto-mono text-h6 line-height-1"> and applying the best practices in both front-end and</p>
+          <p class="roboto-mono text-h6 line-height-1">back-end development.</p>
 
         </div>
       </v-col>
@@ -110,4 +109,7 @@ onMounted(() => {
 
 
 <style scoped>
+.navBarHeight {
+  height: calc(100vh - 56px);
+}
 </style>
