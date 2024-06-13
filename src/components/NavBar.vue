@@ -1,9 +1,13 @@
 <template>
-  <v-toolbar id="toolbar" class="bg-transparent position-fixed" elevation="1" style="z-index: 10;">
-    <v-container class="pb-0">
+  <v-toolbar id="toolbar" class="bg-transparent position-fixed" elevation="1" style="z-index: 10;" density="comfortable">
+    <v-container>
       <div class="d-flex align-center h-100">
 
-        <v-btn @click="goToSection(1)" class="roboto-mono text-h5">M.M.</v-btn>
+        <div
+          @click="goToSection(1)" 
+          class="roboto-mono text-h5 cursor-pointer"
+          >M.M.
+        </div>
 
         <v-spacer></v-spacer>
 
@@ -30,7 +34,7 @@
                   {{ item.name }}
                 </v-btn>
               </template>
-              <v-list>
+              <v-list class="bg-brown-darken-4 roboto-mono" min-width="100" density="comfortable">
                 <v-list-item
                   v-for="(subItem, index) in item.items"
                   :key="index"
@@ -63,7 +67,7 @@ const navItems = [
     section: 1,
   },
   {
-    name: 'Skills',
+    name: 'Stack',
     items: [
       {
         name: 'Vue',

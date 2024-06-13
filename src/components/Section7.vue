@@ -5,7 +5,7 @@
         class="d-flex align-center justify-center pa-0"
       >
         <v-form v-model="form" class="w-66" @submit.prevent="submit">
-          <h4 class="text-h4 mb-3 text-grey-lighten-1">Contact Me</h4>
+          <h4 class="text-h4 mb-3">Contact Me</h4>
 
           <v-text-field 
             label="Email"

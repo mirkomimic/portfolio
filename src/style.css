@@ -2,8 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Seymour+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Seymour+One&display=swap');
 
+html {
+  width: 100vw;
+}
+
 * {
-  color: white;
+  color: #ffe3b8;
+  /* color: white; */
   /* margin: 0; */
   box-sizing: border-box;
   /* scroll-behavior: auto; */

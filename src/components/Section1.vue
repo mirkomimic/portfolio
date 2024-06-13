@@ -1,6 +1,6 @@
 <template>
   <section id="section_1" class="h-screen">
-    <v-row class="h-100" >
+    <v-row class="h-100 ma-0">
       <v-col 
         class="d-flex align-center justify-center pa-0 mx-auto"
         cols="4"
