@@ -6,7 +6,7 @@
         cols="4"
       >
         <div class="d-flex">
-          <v-img src="images/programming5.webp" width="400" class="image ms-5"></v-img>
+          <v-img src="images/programming5.webp" width="400" class="image floating ms-5"></v-img>
         </div>
       </v-col>
       <v-col
@@ -44,9 +44,9 @@
 
     <div 
       class="skills glassy rounded mb-5 pa-3 d-flex justify-center ga-10 position-fixed left-0 right-0 bottom-0 mx-auto"
-      style="width: 450px; height: 100px;"
+      style="width: 450px; height: 100px;  z-index: 10;"
     >
-      <div class="vueWrapper" style="width: 70px; ">
+      <div class="vueWrapper" style="width: 70px;">
         <v-img class="vue" src="skills/vue.png" width="70" height="70"></v-img>
       </div>
       <div class="laravelWrapper" style="width: 70px; ">
@@ -109,7 +109,20 @@ onMounted(() => {
 
 
 <style scoped>
-.navBarHeight {
-  height: calc(100vh - 56px);
+
+
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    /* margin-left: 30px;
+    margin-top: 5px; */
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(15px, 0); }
+    100%   { transform: translate(-0px, 0); }    
 }
 </style>

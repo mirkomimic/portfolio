@@ -35,7 +35,34 @@
 </template>
 
 <script setup>
+import { gsap } from 'gsap'
+import { onMounted, ref } from 'vue';
+import ScrollTrigger from "gsap/ScrollTrigger";
+import Splitting from "splitting";
 
+gsap.registerPlugin(ScrollTrigger) 
+
+
+onMounted(() => {
+  Splitting({ target: '#section_2 .card p', by: 'lines' });
+
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: '#section_2',
+      start: 'center center',
+      end: 'center center',
+      // markers: true,
+    }
+  })
+
+  tl.from('#section_2 .card p span', {
+    opacity: 0,
+    stagger: .01,
+  }).from('#section_2 .card li', {
+    opacity: 0,
+    stagger: .1,
+  }, '-=.5')
+})
 </script>
 
 
